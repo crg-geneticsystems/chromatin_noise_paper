@@ -18,10 +18,11 @@ The first three scripts perform variance normalisation, cell cycle correction an
 
 ## 1. Variance normalisation
 
-[01\_pagoda\_varnorm.R](./01_pagoda_varnorm.R) performs read count filtering, construction of cell-specific error models and normalisation of gene expression variances relative to transcriptome-wide expectations. Commandline options specific to each dataset are provided in [01\_pagoda\_varnorm.sh](./01_pagoda_varnorm.sh).
+[01\_pagoda\_varnorm.R](./01_pagoda_varnorm.R) performs read count filtering, construction of cell-specific error models and normalisation of gene expression variances relative to transcriptome-wide expectations. Command-line options specific to each dataset are provided in [01\_pagoda\_varnorm.sh](./01_pagoda_varnorm.sh).
 
+## 2. Cell cycle control
 
-
+[02\_pagoda\_cellcyclecontrol.R](./02_pagoda_cellcyclecontrol.R) controls for cell cycle-related variation using the set of genes annotated to the GO biological process term "cell cycle". This procedure is repeated iteratively until cell cycle gene covariability is indistinguishable from that expected by chance. Command-line options specific to each dataset are provided in [02\_pagoda\_cellcyclecontrol.sh](./02_pagoda_cellcyclecontrol.sh).
 
 
 
