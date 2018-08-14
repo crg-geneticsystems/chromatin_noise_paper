@@ -24,7 +24,7 @@ Alternatively, to skip the first three stages and reproduce the plots only, you 
 
 * **Processed data** for each experiment ([chromatin_noise_paper_processed.zip](https://www.dropbox.com/s/wurwzs5ihwngwhk/chromatin_noise_paper_processed.zip?dl=0))
 
-Finally, you can also simply download the resulting plots produced by stages 04 - 06:
+Finally, to simply inspect the resulting plots, you can also download the resulting plots produced by stages 04 - 06:
 
 * **Final plots** summarising results from all analyses ([chromatin_noise_paper_plots.zip](https://www.dropbox.com/s/3fyxd38owur5d3u/chromatin_noise_paper_plots.zip?dl=0))
 
