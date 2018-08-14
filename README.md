@@ -9,12 +9,20 @@ The pipeline relies heavily on the [SCDE](https://github.com/hms-dbmi/scde) pack
 
 # Pipeline
 
+The first three stages (01 - 03) perform variance normalisation, cell cycle correction and gene set over-dispersion analysis using the PAGODA framework (contained in the [SCDE](https://github.com/hms-dbmi/scde) package).
+
 To run this pipeline, you will first need to download matrices of read/molecule counts in single cells as well as custom gene annotation files: 
 
 * **Read counts** for each experiment ([chromatin_noise_paper_raw.zip](https://www.dropbox.com/s/13a3ddosp4ojopc/chromatin_noise_paper_raw.zip?dl=0))
 * **Supplementary data** including custom gene annotations ([chromatin_noise_paper_misc.zip](https://www.dropbox.com/s/5q4ch3y7a5szgjb/chromatin_noise_paper_misc.zip?dl=0))
 
-The first three scripts perform variance normalisation, cell cycle correction and gene set over-dispersion analysis using the PAGODA framework (contained in the [SCDE](https://github.com/hms-dbmi/scde) package):
+Once unzipped, their contents should be transferred to repository base path ("chromatin_noise_paper").
+
+The second three stages (04 - 06) produce plots appearing in the above publication. To run these scripts, you will once again need the Supplementary data files ([chromatin_noise_paper_misc.zip](https://www.dropbox.com/s/5q4ch3y7a5szgjb/chromatin_noise_paper_misc.zip?dl=0)) as well as the output of stages 01 - 03.
+
+Alternatively, to skip the first three stages and reproduce the plots only, you can simply download the required output of stages 01 - 03:
+
+* **Processed data** for each experiment ([chromatin_noise_paper_processed.zip](https://www.dropbox.com/s/wurwzs5ihwngwhk/chromatin_noise_paper_processed.zip?dl=0))
 
 ## 1. Variance normalisation
 
