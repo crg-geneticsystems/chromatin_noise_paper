@@ -24,6 +24,10 @@ The first three scripts perform variance normalisation, cell cycle correction an
 
 [02\_pagoda\_cellcyclecontrol.R](./02_pagoda_cellcyclecontrol.R) controls for cell cycle-related variation using the set of genes annotated to the GO biological process term "cell cycle". This procedure is repeated iteratively until cell cycle gene covariability is indistinguishable from that expected by chance. Command-line options specific to each dataset are provided in [02\_pagoda\_cellcyclecontrol.sh](./02_pagoda_cellcyclecontrol.sh).
 
+## 3. Gene Set Over-Dispersion and Total Noise Level Bias Analysis
+
+[03\_pagoda\_adjvariance\_bias.R](./03_pagoda_adjvariance_bias.R) performs chromatin/promoter type gene set and pathway covariability as well as total noise level bias analysis. Command-line options specific to each dataset are provided in [03\_pagoda\_adjvariance\_bias.sh](./03_pagoda_adjvariance_bias.sh).
+
 
 
 
