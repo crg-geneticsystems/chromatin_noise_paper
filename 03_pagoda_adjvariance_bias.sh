@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Assumes current working directory is repository base path ("chromatin_noise_path")
+#Assumes current working directory is repository base path ("chromatin_noise_paper")
 
 #Grun2i
 mkdir pagoda_adjvariance_bias_grun2i_ccc
