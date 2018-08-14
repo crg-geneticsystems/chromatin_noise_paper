@@ -9,16 +9,18 @@ The pipeline relies heavily on the [SCDE](https://github.com/hms-dbmi/scde) pack
 
 # Pipeline
 
-To run this pipeline, you will first need to download matrices of read counts in single cells as well as custom gene annotation files: 
+To run this pipeline, you will first need to download matrices of read/molecule counts in single cells as well as custom gene annotation files: 
 
-* **Raw counts** for each experiment ([chromatin_noise_paper_raw.zip](https://www.dropbox.com/s/13a3ddosp4ojopc/chromatin_noise_paper_raw.zip?dl=0))
+* **Read counts** for each experiment ([chromatin_noise_paper_raw.zip](https://www.dropbox.com/s/13a3ddosp4ojopc/chromatin_noise_paper_raw.zip?dl=0))
 * **Supplementary data** including custom gene annotations ([chromatin_noise_paper_misc.zip](https://www.dropbox.com/s/5q4ch3y7a5szgjb/chromatin_noise_paper_misc.zip?dl=0))
 
 The first three scripts perform variance normalisation, cell cycle correction and gene set over-dispersion analysis using the PAGODA framework (contained in the [SCDE](https://github.com/hms-dbmi/scde) package):
 
 ## 1. Variance normalisation
 
-[01\_pagoda\_varnorm.R](./01_pagoda_varnorm.R)
+[01\_pagoda\_varnorm.R](./01_pagoda_varnorm.R) performs read count filtering, construction of cell-specific error models and normalisation of gene expression variances relative to transcriptome-wide expectations. Commandline options specific to each dataset are provided in [01\_pagoda\_varnorm.sh](./01_pagoda_varnorm.sh).
+
+
 
 
 
