@@ -24,6 +24,10 @@ Alternatively, to skip the first three stages and reproduce the plots only, you 
 
 * **Processed data** for each experiment ([chromatin_noise_paper_processed.zip](https://www.dropbox.com/s/wurwzs5ihwngwhk/chromatin_noise_paper_processed.zip?dl=0))
 
+Finally, you can also simply download the resulting plots produced by stages 04 - 06:
+
+* **Final plots** summarising results from all analyses ([chromatin_noise_paper_plots.zip](https://www.dropbox.com/s/3fyxd38owur5d3u/chromatin_noise_paper_plots.zip?dl=0))
+
 ## 1. Variance normalisation
 
 [01\_pagoda\_varnorm.R](./01_pagoda_varnorm.R) performs read count filtering, construction of cell-specific error models and normalisation of gene expression variances relative to transcriptome-wide expectations. Command-line options specific to each dataset are provided in [01\_pagoda\_varnorm.sh](./01_pagoda_varnorm.sh).
@@ -36,6 +40,17 @@ Alternatively, to skip the first three stages and reproduce the plots only, you 
 
 [03\_pagoda\_adjvariance\_bias.R](./03_pagoda_adjvariance_bias.R) performs chromatin/promoter type gene set and pathway covariability as well as total noise level bias analysis. Command-line options specific to each dataset are provided in [03\_pagoda\_adjvariance\_bias.sh](./03_pagoda_adjvariance_bias.sh).
 
+## 4. Total Noise Level Bias Plots
+
+[04\_adjvariance\_bias\_plots.R](./04_adjvariance_bias_plots.R) produces chromatin/promoter type gene set total noise level bias and binomial smooth plots.
+
+## 5. Integrated Noise Model Analysis and Plots
+
+[05\_integratedmodels\_plots.R](./05_integratedmodels_plots.R) performs all integrated model analyses and produces summary plots of model coefficients.
+
+## 6. mRNA Stability Meta-analysis and Plots
+
+[06\_mRNAstability\_plots.R](./06_mRNAstability_plots.R) performs mRNA stability meta-analysis and produces associated plots.
 
 
 
