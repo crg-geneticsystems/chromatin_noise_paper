@@ -7,6 +7,10 @@ Here you'll find all the scripts needed to reproduce the main text figures and r
 
 The pipeline relies heavily on the [SCDE](https://github.com/hms-dbmi/scde) package which implements a set of statistical methods for analyzing single-cell RNA-seq data.
 
+# Required Software
+
+To run these scripts you will need R (version 3.2) as well as the following R/Bioconductor packages: scde, ShortRead, biomaRt, ggplot2, reshape2, plyr, GGally, RColorBrewer, coin, rtracklayer, ggExtra, optparse.
+
 # Pipeline
 
 The first three stages (01 - 03) perform variance normalisation, cell cycle correction and gene set over-dispersion analysis using the PAGODA framework (contained in the [SCDE](https://github.com/hms-dbmi/scde) package).
